@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello Nanba </h1><hr>
+<!-- Recive a Data from index.js (server) -->
+<p>Data receive from server</p>
+    <h1><%= name %></h1><hr>
+
+<!--JS code in EJS directly -->
+<p>JS code in EJS directly</p>
+    <% if (1) { %>
+        <h2>If block </h2>
+      <% } else { %>
+        <h2>else</h2>
+      <% } %>
+        <hr>
+<!-- Form  -->
+<h3>Form</h3>
+    <form action="/" method="POST">
+        <input type="text" name="name" placeholder="name">
+        <input type="submit" value="Submit">
+    </form>
+
+<!-- List render -->
+<ul>
+    <h5>List item (<%= newListItems.length %>)</h5>
+    <% for (var i = 0; i < newListItems.length; i++) { %>
+        <li> <%= newListItems[i] %> </li>
+    <% } %>
+</ul>
+
+</body>
+</html>
