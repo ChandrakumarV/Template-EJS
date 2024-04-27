@@ -1,4 +1,4 @@
-### Impelment a Template Modules (SSR)
+### Impelment a Template Modules Using EJS (SSR)
 
 > npm i
 
